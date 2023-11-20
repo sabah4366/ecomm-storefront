@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/sabah/djangolearning/Code with Mosh Django/The Ultimate Django Series Part 1/Getting Started (3m)/Django- Resources/Resources/Code/4- Setting Up the Database/Start/storefront/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from django.core.management import execute_from_command_line
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(execute_from_command_line())
