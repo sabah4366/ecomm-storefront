@@ -8,6 +8,7 @@ from django.contrib.contenttypes.admin import GenericTabularInline
 from django.urls import reverse
 from . import models
 from tags.models import TaggedItem
+admin.site.register(models.OrderItem)
 
 class InventoryFilter(admin.SimpleListFilter):
     title='inventory'
